@@ -1,0 +1,24 @@
+@mixin Triangle($direction,$color:#FFF,$size: .8rem ,$position: relative) {
+
+    @if ($direction == "down") {
+        
+        position: $position;
+        top: 32%;
+        right: 5%;
+        content: "";
+        border-top: solid $size $color;
+        border-left: solid $size transparent;
+        border-right: solid $size transparent;
+    
+    }
+    @if ($direction == "up") {
+        
+    }
+    @if ($direction == "left") {
+        
+    }
+    @if ($direction == "right") {
+        
+    }
+
+}

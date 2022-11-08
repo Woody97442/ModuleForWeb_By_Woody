@@ -1,0 +1,24 @@
+@import url("/scss/_couleurs.scss");
+@import url("/scss/_mixins.scss");
+@import url("/scss/_typo.scss");
+
+
+button{
+    position: relative;
+    background-color: black;
+    font-size: 100%;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 1% 5% 1% 1%;
+
+    &:hover{
+        background-color: red;
+    }
+    
+    // #triangle{
+    //     @include Triangle("down" white .8rem absolute);
+    // }
+
+}
