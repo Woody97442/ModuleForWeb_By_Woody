@@ -1,0 +1,33 @@
+:root{
+    /*ajouter url du png avatar cible*/
+    --Avatar_Logo: url("");
+    /*-------------------------------*/
+    --width_avatar: 32px;
+    --height_avatar: 32px;
+    --bordercolor_avatar: rgb(0, 4, 255);
+    --border_radius: 100%;
+}
+
+#Avatar{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    background-image: var(--Avatar_Logo);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: solid 2.5px var(--bordercolor_avatar);
+    align-items: center;
+    transition: .2s ease;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: var(--width_avatar);
+    height: var(--height_avatar);
+    border-radius: var(--border_radius);
+}
+
+#Avatar:hover{
+    scale: .9;
+    opacity: .8;
+}
